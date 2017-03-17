@@ -15,6 +15,9 @@
 		EC9DC2441E7BE041001A0F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9DC2421E7BE041001A0F00 /* LaunchScreen.storyboard */; };
 		EC9DC24F1E7BE041001A0F00 /* duckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DC24E1E7BE041001A0F00 /* duckTests.m */; };
 		EC9DC25A1E7BE041001A0F00 /* duckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DC2591E7BE041001A0F00 /* duckUITests.m */; };
+		EC9DC26B1E7BE0E8001A0F00 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EC9DC26A1E7BE0E8001A0F00 /* data.json */; };
+		EC9DC26E1E7BE14D001A0F00 /* XXDuckEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DC26D1E7BE14D001A0F00 /* XXDuckEntity.m */; };
+		EC9DC2741E7BE468001A0F00 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9DC2731E7BE468001A0F00 /* API.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		EC9DC2551E7BE041001A0F00 /* duckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = duckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC9DC2591E7BE041001A0F00 /* duckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = duckUITests.m; sourceTree = "<group>"; };
 		EC9DC25B1E7BE041001A0F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC9DC2671E7BE0C0001A0F00 /* XXUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXUserEntity.h; sourceTree = "<group>"; };
+		EC9DC26A1E7BE0E8001A0F00 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		EC9DC26C1E7BE14D001A0F00 /* XXDuckEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXDuckEntity.h; sourceTree = "<group>"; };
+		EC9DC26D1E7BE14D001A0F00 /* XXDuckEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXDuckEntity.m; sourceTree = "<group>"; };
+		EC9DC26F1E7BE3BF001A0F00 /* XXStudentEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXStudentEntity.h; sourceTree = "<group>"; };
+		EC9DC2721E7BE468001A0F00 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		EC9DC2731E7BE468001A0F00 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +115,13 @@
 				EC9DC2381E7BE041001A0F00 /* AppDelegate.m */,
 				EC9DC23A1E7BE041001A0F00 /* ViewController.h */,
 				EC9DC23B1E7BE041001A0F00 /* ViewController.m */,
+				EC9DC2671E7BE0C0001A0F00 /* XXUserEntity.h */,
+				EC9DC26F1E7BE3BF001A0F00 /* XXStudentEntity.h */,
+				EC9DC2721E7BE468001A0F00 /* API.h */,
+				EC9DC2731E7BE468001A0F00 /* API.m */,
+				EC9DC26C1E7BE14D001A0F00 /* XXDuckEntity.h */,
+				EC9DC26D1E7BE14D001A0F00 /* XXDuckEntity.m */,
+				EC9DC26A1E7BE0E8001A0F00 /* data.json */,
 				EC9DC23D1E7BE041001A0F00 /* Main.storyboard */,
 				EC9DC2401E7BE041001A0F00 /* Assets.xcassets */,
 				EC9DC2421E7BE041001A0F00 /* LaunchScreen.storyboard */,
@@ -252,6 +269,7 @@
 				EC9DC2441E7BE041001A0F00 /* LaunchScreen.storyboard in Resources */,
 				EC9DC2411E7BE041001A0F00 /* Assets.xcassets in Resources */,
 				EC9DC23F1E7BE041001A0F00 /* Main.storyboard in Resources */,
+				EC9DC26B1E7BE0E8001A0F00 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +296,9 @@
 			files = (
 				EC9DC23C1E7BE041001A0F00 /* ViewController.m in Sources */,
 				EC9DC2391E7BE041001A0F00 /* AppDelegate.m in Sources */,
+				EC9DC26E1E7BE14D001A0F00 /* XXDuckEntity.m in Sources */,
 				EC9DC2361E7BE041001A0F00 /* main.m in Sources */,
+				EC9DC2741E7BE468001A0F00 /* API.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
