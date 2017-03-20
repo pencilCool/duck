@@ -7,9 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "XXDuckEntity.h"
+#import "XXUserEntity.h"
 @interface ViewController ()
-@property (nonatomic, strong) API  *api;
+
 @end
 
 @implementation ViewController
@@ -20,8 +21,9 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"data" ofType:@"json"];
     NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    XXDuckEntity *duck = [[XXDuckEntity alloc] initWithJSONString:jsonString];
-    [self.api requestFinished:duck];
+    id<XXDuckEntity, XXUserEntity> entity= XXDuckEntityCreateWithJSON(jsonString);
+//    id<XXUserEntity> copied = [entity copyWithZone:nil];
+    NSLog(@"%@, %@", entity.name, entity.sex);
 }
 
 
@@ -32,11 +34,5 @@
 
 
 
-- (API *)api {
-    if(_api == nil) {
-        _api = [API new];
-    }
-    return _api;
-}
 
 @end

@@ -10,5 +10,4 @@
 #import "XXStudentEntity.h"
 #import "XXDuckEntity.h"
 @interface API : NSObject
-- (void)requestFinished:(XXDuckEntity<XXStudentEntity> *)student;
 @end

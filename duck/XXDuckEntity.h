@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XXDuckEntity : NSProxy
-- (instancetype)initWithJSONString:(NSString *)json;
+
+@protocol XXDuckEntity <NSObject, NSCopying, NSCoding>
+@property (nonatomic, copy, readonly) NSString *jsonString;
+- (void)foo;
 @end
+
+extern id XXDuckEntityCreateWithJSON(NSString *json);
+
+

@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XXDuckEntity.h"
-#import "API.h"
 @interface ViewController : UIViewController
 
 

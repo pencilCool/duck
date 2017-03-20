@@ -7,13 +7,25 @@
 //
 
 #import "XXDuckEntity.h"
+
+@interface XXDuckEntity : NSProxy
+- (instancetype)initWithJSONString:(NSString *)json;
+@end
+
+
 @interface XXDuckEntity ()
 @property (nonatomic, strong) NSMutableDictionary *innerDictionary;
 @end
 @implementation XXDuckEntity
 
 
-- (instancetype)initWithJSONString:(NSString *)json
+id XXDuckEntityCreateWithJSON(NSString *json)
+{
+    return [[XXDuckEntity alloc] initWithJSONString:json];
+}
+
+
+- (id)initWithJSONString:(NSString *)json
 {
     NSData *data = [json dataUsingEncoding:NSUTF8StringEncoding];
     id jsonObject = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];

@@ -9,7 +9,5 @@
 #import "API.h"
 
 @implementation API
-- (void)requestFinished:(XXDuckEntity<XXStudentEntity> *)student {
-    NSLog(@"name: %@, school:%@", student.name, student.school);
-}
+
 @end
